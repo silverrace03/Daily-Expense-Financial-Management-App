@@ -33,6 +33,10 @@ The first run creates `expenses.db` in the same folder. Use positive amounts. Da
 python3 -m unittest -v test_app.py
 ```
 
+## Browser version (Streamlit)
+
+Install dependencies and run `streamlit run streamlit_app.py`. This browser version provides transaction entry, history, category reports and CSV export, and can be deployed on Streamlit Community Cloud, Render or Hugging Face Spaces.
+
 ## Project design
 
 The interface has three tabs: Add Transaction, Transaction History and Reports. The SQLite table stores `kind`, `amount`, `category`, `payment_method`, `transaction_date`, `description` and timestamps. The balance is calculated as total income minus total expenses.
